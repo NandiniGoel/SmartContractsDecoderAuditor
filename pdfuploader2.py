@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Replace 'YOUR_OPENAI_API_KEY' with your actual key
-openai.api_key = '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'
+openai.api_key = ''
 
 def truncate_text(text, max_length):
     if len(text) <= max_length:
