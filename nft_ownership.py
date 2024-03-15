@@ -16,7 +16,7 @@ def get_ownership_details():
     url = f"https://api.verbwire.com/v1/nft/data/ownershipForContractAddress?contractAddress={contract_address}&limit=25&page=1&sortDirection=DESC"
     headers = {
         "accept": "application/json",
-        "X-API-Key": "sk_live_08ea7bc0-db22-41fd-aed8-648aa3e631f4"  # Replace with your actual VerbWire API key
+        "X-API-Key": ""  # Replace with your actual VerbWire API key
     }
 
     response = requests.get(url, headers=headers)
