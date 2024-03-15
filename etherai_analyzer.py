@@ -15,7 +15,7 @@ def truncate_text(text, max_length):
 def fetch_contract_info(contract_address):
     try:
         # Call EtherScan API to fetch contract details
-        api_url = f"https://api.etherscan.io/api?module=contract&action=getsourcecode&address={contract_address}&apikey=M9G66DT4I318D9QKUBWVJDICP5AYGP5X6I"
+        api_url = f"https://api.etherscan.io/api?module=contract&action=getsourcecode&address={contract_address}&apikey="
         response = requests.get(api_url)
         data = response.json()
 
@@ -89,7 +89,7 @@ def get_ownership_details():
         url = f"https://api.verbwire.com/v1/nft/data/ownershipForContractAddress?contractAddress={contract_address}&limit=25&page=1&sortDirection=DESC"
         headers = {
             "accept": "application/json",
-            "X-API-Key": "sk_live_08ea7bc0-db22-41fd-aed8-648aa3e631f4"  # Replace with your actual VerbWire API key
+            "X-API-Key": ""  # Replace with your actual VerbWire API key
         }
 
         response = requests.get(url, headers=headers)
